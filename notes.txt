@@ -1,0 +1,16 @@
+jar:
+jar -tvf target/ignite-examples-2.7.0.jar
+
+Maven:
+Directory:
+/Users/yilu/apache-ignite-2.7.0-bin/examples
+
+Command:
+mvn dependency:copy-dependencies
+
+Start Ignite:
+Directory:
+/Users/yilu/apache-ignite-2.7.0-bin/examples
+
+Command:
+java -cp '../benchmarks/libs/*:target/ignite-examples-2.7.0.jar'  org.apache.ignite.examples.ExampleNodeStartup
